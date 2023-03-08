@@ -21,21 +21,21 @@ public class Enemy extends BookwormCharacter{
         return 1;
     }
 
-    public boolean checkImmunity(Gem newGem){
-        boolean immune = false;
-        switch (newGem.getGemType()){
-            case AMETHYST:
-            if (getImmunities().contains(IMMUNITIES.POISON))
-                immune = true;
-            case RUBY:
-            if (getImmunities().contains(IMMUNITIES.BURN))
-                immune = true;
-            case SAPPHIRE:
-            if (getImmunities().contains(IMMUNITIES.FREEZE))
-                immune = true;
-        }
-        return immune;
-    }
+//    public boolean checkImmunity(Gem newGem){
+//        boolean immune = false;
+//        switch (newGem.getGemType()){
+//            case AMETHYST:
+//            if (getImmunities().contains(IMMUNITIES.POISON))
+//                immune = true;
+//            case RUBY:
+//            if (getImmunities().contains(IMMUNITIES.BURN))
+//                immune = true;
+//            case SAPPHIRE:
+//            if (getImmunities().contains(IMMUNITIES.FREEZE))
+//                immune = true;
+//        }
+//        return immune;
+//    }
 
     private ArrayList<IMMUNITIES> getImmunities() {
         return immunities;
